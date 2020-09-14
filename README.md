@@ -10,21 +10,20 @@ Thanks jbohnslav's work in rewrite transform in opencv based, this repo is to ex
 
 
 ## Function included
-[x] Compose
-[x] ToTensor
-[x] ClipToTensor
-[x] Lambda
-[x] Normalize
-[x] Resize
-[x] RandomCrop
-[x] CenterCrop
-[x] RandomHorizontalFlip
-[x] RandomVerticalFlip
-[x] RandomResizedCrop
-[x] TenCrop
-[x] ColorJitter
-[x] RandomRotation
-[x] RandomGrayScale
+- [x] Compose
+- [x] ToTensor
+- [x] ClipToTensor
+- [x] Lambda
+- [x] Normalize
+- [x] Resize
+- [x] RandomCrop
+- [x] CenterCrop
+- [x] RandomHorizontalFlip
+- [x] RandomVerticalFlip
+- [x] RandomResizedCrop
+- [x] ColorJitter
+- [x] RandomRotation
+- [x] RandomGrayScale
 
 ## To Use it
 ```shell
