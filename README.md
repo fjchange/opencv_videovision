@@ -27,5 +27,7 @@ Thanks jbohnslav's work in rewrite transform in opencv based, this repo is to ex
 [x] RandomGrayScale
 
 ## To Use it
-``` pip install git+https://github.com/fjchange/videotransforms_opencv ```
+```shell
+pip install git+https://github.com/fjchange/opencv_videovision 
+```
 
