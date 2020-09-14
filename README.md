@@ -1,4 +1,4 @@
-# videotransforms_opencv
+# opencv_videovision
 ![results](data/cat/transforms_result.jpg)
 
 ## 1. Introduction
