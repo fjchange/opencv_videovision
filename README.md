@@ -27,6 +27,6 @@ Thanks jbohnslav's work in rewrite transform in opencv based, this repo is to ex
 
 ## To Use it
 ```shell
-pip install git+https://github.com/fjchange/opencv_videovision 
+pip install git+https://github.com/fjchange/opencv_videovision.git
 ```
 
