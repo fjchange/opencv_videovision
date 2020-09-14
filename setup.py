@@ -13,7 +13,7 @@ setuptools.setup(
     keywords='pytorch image augmentations',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/fjchange/videotransforms_opencv',
+    url='https://github.com/fjchange/opencv_videovision',
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
