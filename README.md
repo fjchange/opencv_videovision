@@ -1,4 +1,4 @@
-# videotransform_opencv
+# videotransforms_opencv
 ## 1. Introduction
 This repo is opencv accelerated video tensorform lib for pytorch. Part of this repo is modified from [opencv_transforms](https://github.com/jbohnslav/opencv_transforms) and [torch_videovision](https://github.com/hassony2/torch_videovision). 
 
