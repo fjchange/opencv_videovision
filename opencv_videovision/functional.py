@@ -1,6 +1,6 @@
-########################################################################
-##  This part is from https://github.com/jbohnslav/opencv_transforms  ##
-########################################################################
+#################################################################################
+##  This part is Modified from https://github.com/jbohnslav/opencv_transforms  ##
+#################################################################################
 import torch
 import math
 import random
@@ -330,6 +330,37 @@ def ten_crop(img, size, vertical_flip=False):
     second_five = five_crop(img, size)
     return first_five + second_five
 
+def five_crop_tensor(clip,size):
+    # suppose clip is with shape [C,T,W,H]
+    if isinstance(size, numbers.Number):
+        size = (int(size), int(size))
+    else:
+        assert len(size) == 2, "Please provide only two dimensions (h, w) for size."
+
+    h,w = clip.shape[-2:]
+    crop_h, crop_w = size
+    if crop_w > w or crop_h > h:
+        raise ValueError("Requested crop size {} is bigger than input size {}".format(size,
+                                                                                      (h, w)))
+    c_t=int((h-crop_h+1)*0.5)
+    c_l=int((w-crop_w+1)*0.5)
+    tl=clip[:,:,0:crop_h,0:crop_w]
+    tr=clip[:,:,0:crop_h,w-crop_w:w]
+    bl=clip[:,:,h-crop_h:h,0:crop_w]
+    br=clip[:,:,h-crop_h:h,w-crop_w:w]
+    center=clip[:,:,c_t:c_t+crop_h,c_l:c_l+crop_w]
+    return [tl,tr,bl,br,center]
+
+def ten_crop_tensor(clip,size):
+    if isinstance(size, numbers.Number):
+        size = (int(size), int(size))
+    else:
+        assert len(size) == 2, "Please provide only two dimensions (h, w) for size."
+
+    first_five=five_crop_tensor(clip,size)
+    clip=clip.flip(-1)
+    next_five=five_crop_tensor(clip,size)
+    return first_five+next_five
 
 def adjust_brightness(img, brightness_factor):
     """Adjust brightness of an Image.
