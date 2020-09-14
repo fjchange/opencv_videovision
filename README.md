@@ -10,8 +10,22 @@ Thanks jbohnslav's work in rewrite transform in opencv based, this repo is to ex
 
 
 ## Function included
-'Compose','ToTensor','ClipToTensor','Lambda','Normalize','Resize','RandomCrop','CenterCrop','RandomHorizontalFlip','RandomVerticalFlip','RandomResizedCrop','TenCrop','ColorJitter','RandomRotation','RandomGrayScale'
+[x] Compose
+[x] ToTensor
+[x] ClipToTensor
+[x] Lambda
+[x] Normalize
+[x] Resize
+[x] RandomCrop
+[x] CenterCrop
+[x] RandomHorizontalFlip
+[x] RandomVerticalFlip
+[x] RandomResizedCrop
+[x] TenCrop
+[x] ColorJitter
+[x] RandomRotation
+[x] RandomGrayScale
 
 ## To Use it
-` pip install git+https://github.com/fjchange/videotransforms_opencv
+``` pip install git+https://github.com/fjchange/videotransforms_opencv ```
 
