@@ -29,4 +29,7 @@ Thanks jbohnslav's work in rewrite transform in opencv based, this repo is to ex
 ```shell
 pip install git+https://github.com/fjchange/opencv_videovision.git
 ```
-
+···python
+from opencv_videovision import transforms
+videotransforms=transforms.Compose([any transform you want])
+```
