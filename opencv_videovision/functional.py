@@ -286,7 +286,7 @@ def five_crop(img, size):
     else:
         assert len(size) == 2, "Please provide only two dimensions (h, w) for size."
 
-    w, h = img.shape[0:2]
+    h,w = img.shape[0:2]
     crop_h, crop_w = size
     if crop_w > w or crop_h > h:
         raise ValueError("Requested crop size {} is bigger than input size {}".format(size,
