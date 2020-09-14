@@ -9,7 +9,7 @@ setuptools.setup(
     version='0.0.1',
     author='Jia-Chang Feng',
     author_email='fjchange@hotmail.com',
-    description='A drop-in replacement for Torchvision Transforms using OpenCV',
+    description='A drop-in replacement for Torchvision Video Transforms using OpenCV',
     keywords='pytorch image augmentations',
     long_description=long_description,
     long_description_content_type='text/markdown',
