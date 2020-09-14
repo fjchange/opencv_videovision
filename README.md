@@ -1,4 +1,6 @@
 # videotransforms_opencv
+![results](data/cat/transforms_result.jpg)
+
 ## 1. Introduction
 This repo is opencv accelerated video tensorform lib for pytorch. Part of this repo is modified from [opencv_transforms](https://github.com/jbohnslav/opencv_transforms) and [torch_videovision](https://github.com/hassony2/torch_videovision). 
 
@@ -6,7 +8,6 @@ As descirbed in [opencv_transforms](https://github.com/jbohnslav/opencv_transfor
 
 Thanks jbohnslav's work in rewrite transform in opencv based, this repo is to expand it to video domain. As @jbohnslav mentioned, most transfroms would 1.5~4.0X faster than origin one.
 
-![results](data/cat/transforms_result.jpg)
 
 ## Function included
 'Compose','ToTensor','ClipToTensor','Lambda','Normalize','Resize','RandomCrop','CenterCrop','RandomHorizontalFlip','RandomVerticalFlip','RandomResizedCrop','TenCrop','ColorJitter','RandomRotation','RandomGrayScale'
